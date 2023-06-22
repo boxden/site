@@ -1,70 +1,97 @@
-/* Reset some default styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, li {
+/* Общие стили */
+
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Set a background color and font for the body */
-body {
-  background-color: #f1f1f1;
-  font-family: Arial, sans-serif;
+h1, h2, h3 {
+  color: #333;
 }
 
-/* Add some padding and a background color to the header */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Стили для заголовка */
+
 header {
+  background-color: #f2f2f2;
   padding: 20px;
+}
+
+/* Стили для навигации */
+
+nav {
   background-color: #333;
-  color: #fff;
 }
 
-/* Style the main heading */
-h1 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-/* Style the navigation menu */
 nav ul {
-  list-style-type: none;
-  background-color: #555;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 10px;
+  margin: 0 10px;
 }
 
 nav ul li a {
   color: #fff;
-  text-decoration: none;
 }
 
-/* Add some spacing and a background color to the main content area */
+/* Стили для основного содержимого */
+
 main {
   padding: 20px;
-  background-color: #fff;
-  margin-top: 10px;
 }
 
-/* Style the section headings */
+section {
+  margin-bottom: 30px;
+}
+
 h2 {
-  font-size: 20px;
   margin-bottom: 10px;
 }
 
-/* Style the footer */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.testimonial {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+}
+
+.testimonial cite {
+  font-weight: bold;
+}
+
+/* Стили для подвала */
+
 footer {
-  padding: 10px;
   background-color: #333;
   color: #fff;
+  padding: 10px;
   text-align: center;
-  font-size: 14px;
 }
-
-/* Add some margin below the footer */
-footer {
-  margin-top: 10px;
-}
-
-/* Add additional styles as needed */
