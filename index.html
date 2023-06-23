@@ -3,63 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <title>GitHub Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <script src="/js/javascript.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Welcome to My GitHub Page</h1>
+    <h1>Hammer Editor in Source 2</h1>
   </header>
 
   <nav>
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Projects</a></li>
+      <li><a href="/sites/projects.html">Projects</a></li>
       <li><a href="#">Contact</a></li>
+      <li><a href="/sites/about.html">About</a></li>
     </ul>
   </nav>
-
+  
   <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Write a brief description about yourself and your interests.</p>
-    </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="#">Project 1</a></li>
-        <li><a href="#">Project 2</a></li>
-        <li><a href="#">Project 3</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>You can reach me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
-    </section>
-    
-    <section>
-      <h2>Blog</h2>
-      <article>
-        <h3>Blog Post 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id dolor eget lectus sagittis fringilla. Nullam feugiat neque ac mauris consectetur, in tincidunt mi semper.</p>
-      </article>
-      <article>
-        <h3>Blog Post 2</h3>
-        <p>Aliquam sed tellus sed tellus congue condimentum. Proin id cursus risus. Etiam fringilla sagittis augue vel iaculis.</p>
-      </article>
-    </section>
-    
-    <section>
-      <h2>Gallery</h2>
-      <div class="image-gallery">
-        <img src="image1.jpg" alt="Image 1">
-        <img src="image2.jpg" alt="Image 2">
-        <img src="image3.jpg" alt="Image 3">
+    <h2>Репозитории</h2>
+    <div class="container">
+      <div class="block">
+        <h2><a href="#">BLACK</a></h2>
+        <p>Полноценная игра Black, разработанная Criterion Games в 2006 году. <br> Портированная для Counter-Strike 2 на движке Source 2.</p>
       </div>
+      <div class="block">
+        <h2><a href="https://github.com/MustardChef/WSABuilds">WSABuilds</a></h2>
+        <p>Windows Subsystem для Android™ (WSA) с сервисами Google Play и (или) Magisk. Загружайте неограниченное количество фото и видео в Google Photo.</p>
+      </div>
+      <div class="block">
+        <h2><a href="https://github.com/boxden/site">Site</a></h2>
+        <p>Исходный код данного сайта.</p>
+      </div>
+    </div>
+    
+    <section>
+      <h2>Блог</h2>
+      <article>
+        <h3>WSABuilds с Magisk</h3>
+        <p>Буквально вчера, а сегодня обновив версию до <code class="code-container">WSA_2305.40000.6.0</code><br>
+           Установил эмулятор Android™ и теперь радость полные штаны. <br>
+           Осталось разобраться с директорией, чтобы можно было с лёгкостью загружать видео с компа, наверное символическую ссылку жёсткую сделаю.</p>
+      </article>
+      <article>
+        <h3>Создание сайта</h3>
+        <p>Данный сайт создан с помощью ChatGPT. <br>
+          Если бы не он, у меня бы ушло уйма времени и сил, на хрен пойми что... да и я бы забил скорее в итоге. <br>
+          ChatGPT создавал всё что было в моих пожеланиях, это ли не прекрасно? За искусственным интеллектом будущее!</p>
+      </article>
     </section>
-
+    
+    <section>
+      <h2>Галерея</h2>
+      <div class="image-gallery" id="gallery"></div>
+      <script>
+        // Получаем ссылку на элемент галереи
+        const gallery = document.getElementById('gallery');
+        
+        // Количество изображений, которые нужно создать
+        const count = 54; // Здесь можно ввести любое желаемое количество
+      
+        // Генерируем HTML-код для изображений
+        let html = '';
+        for (let i = 0; i < count; i++) {
+          html += '<img src="/images/scale-400.png">';
+        }
+        gallery.innerHTML = html;
+      </script>      
+    </section>
+    
     <section>
       <h2>Testimonials</h2>
       <div class="testimonial">
@@ -78,7 +94,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2023 Your Name. All rights reserved.</p>
+    <p>&copy; 2023 boxden. All rights reserved.</p>
   </footer>
 </body>
 </html>
