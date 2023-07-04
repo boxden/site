@@ -1,0 +1,53 @@
+body {
+  background-color: #FFDDFF;
+  color: #660066;
+  font-family: 'Inter';
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/britneyspears.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 100px;
+  background-color: rgba(255, 204, 255, 0.95);
+  border: 2px solid #FF99FF;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #660066;
+  text-shadow: 2px 2px 4px #FF99FF;
+}
+
+.news-article {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #660066;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.news-article h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #660066;
+}
+
+.news-article p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 20px;
+}
+
+.news-article .date {
+  font-size: 12px;
+  color: #999999;
+}
